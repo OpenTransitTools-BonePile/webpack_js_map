@@ -7,7 +7,7 @@ logs
 npm-debug.log*
 *~
 yarn.*
-
+config.yml
 
 # Runtime data
 pids

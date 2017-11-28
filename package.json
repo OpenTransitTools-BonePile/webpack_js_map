@@ -7,13 +7,13 @@
     "attribution": ":",
     "license": "MPL-2.0",
     "scripts": {
-        "start": "node index.js",
-        "download": "node lib/prep_data.js",
+        "start": "node lib/index.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "dependencies": {
         "react": "^15.4.2",
-        "yaml-loader": "^0.4.0"
+        "yaml-loader": "^0.5.0",
+        "json-loader": "^0.5.0"
     },
     "devDependencies": {},
     "repository": {
@@ -21,9 +21,8 @@
         "url": "https://github.com/OpenTransitTools/map.git"
     },
     "keywords": [
-        "pelias",
-        "geocoder",
-        "transit"
+        "transit",
+        "map"
     ],
     "bugs": {
         "url": "https://github.com/OpenTransitTools/map/issues"
