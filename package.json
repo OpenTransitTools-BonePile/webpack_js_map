@@ -9,6 +9,7 @@
     "scripts": {
         "build": "webpack --config webpack.config.js",
         "start": "node lib/index.js",
+        "http": "cd dist && python -m SimpleHTTPServer 8000",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "dependencies": {
