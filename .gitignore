@@ -6,8 +6,8 @@ logs
 *.log
 npm-debug.log*
 *~
-yarn.*
 config.yml
+.DS_Store
 
 # Runtime data
 pids
