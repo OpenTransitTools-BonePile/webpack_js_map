@@ -30,8 +30,32 @@ module.exports = {
         // prints more readable module names in the browser console on HMR updates
         new webpack.NamedModulesPlugin()
     ],
+    resolve: {
+        extensions: ['.html', '.js', '.json', '.scss', '.css'],
+        alias: {
+            leaflet_css: path.join(__dirname, "/node_modules/leaflet/dist/leaflet.css")
+/*
+            ,
+            leaflet_marker: path.join(__dirname, "/node_modules/leaflet/dist/images/marker-icon.png"),
+            leaflet_marker_2x: path.join(__dirname, "/node_modules/leaflet/dist/images/marker-icon-2x.png"),
+            leaflet_marker_shadow: path.join(__dirname, "/node_modules/leaflet/dist/images/marker-shadow.png")
+*/
+        }
+    },
     module: {
         loaders: [
+            {
+                test: /\.css$/,
+                loaders: ['style-loader', 'css-loader']
+            },
+            {
+                test: /\.png$/,
+                use: 'url-loader?limit=100000'
+            },
+            {
+                test: /\.jpg$/,
+                use: 'file-loader'
+            }
         ]
     },
 }
