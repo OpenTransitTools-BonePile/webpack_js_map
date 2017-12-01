@@ -32,11 +32,6 @@ module.exports = {
     ],
     module: {
         loaders: [
-            {
-                test: /\.yaml$/,
-                include: path.resolve('data'),
-                loader: 'yaml',
-            }
         ]
     },
 }
