@@ -34,12 +34,12 @@ module.exports = {
         extensions: ['.html', '.js', '.json', '.scss', '.css'],
         alias: {
             leaflet_css: path.join(__dirname, "/node_modules/leaflet/dist/leaflet.css")
-/*
+
             ,
             leaflet_marker: path.join(__dirname, "/node_modules/leaflet/dist/images/marker-icon.png"),
             leaflet_marker_2x: path.join(__dirname, "/node_modules/leaflet/dist/images/marker-icon-2x.png"),
             leaflet_marker_shadow: path.join(__dirname, "/node_modules/leaflet/dist/images/marker-shadow.png")
-*/
+
         }
     },
     module: {
