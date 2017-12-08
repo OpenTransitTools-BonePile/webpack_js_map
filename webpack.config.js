@@ -8,6 +8,8 @@ var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     entry: './lib',
+    cache: true,
+    devtool: 'source-map',
     output: {
         path: path.join(__dirname, 'dist/'),
         filename: '[name].js',
@@ -45,11 +47,6 @@ module.exports = {
             {
                 test: /\.css$/,
                 loaders: ['style-loader', 'css-loader']
-            },
-            {
-                test: /\.png$/,
-                loader: 'url-loader',
-                query: { mimetype: 'image/png' }
             },
             {
                 test: /\.png$/,
