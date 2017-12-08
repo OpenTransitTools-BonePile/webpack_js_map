@@ -48,6 +48,11 @@ module.exports = {
             },
             {
                 test: /\.png$/,
+                loader: 'url-loader',
+                query: { mimetype: 'image/png' }
+            },
+            {
+                test: /\.png$/,
                 use: 'url-loader?limit=100000'
             },
             {
@@ -55,5 +60,5 @@ module.exports = {
                 use: 'file-loader'
             }
         ]
-    },
+    }
 }
