@@ -7,9 +7,16 @@ var webpack = require('webpack')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-    entry: './lib',
     cache: true,
     devtool: 'source-map',
+
+    entry: './lib/',
+    /* *
+    entry: {
+        'lib': './lib/',
+        //'lib/b/index': 'module/b/index.js',
+    },
+    /* */
     output: {
         path: path.join(__dirname, 'dist/'),
         filename: '[name].js',

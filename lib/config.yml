@@ -13,11 +13,11 @@ map:
     - name: Streets
       url: //tiled.trimet.org/tilecache/tilecache.py/1.0.0/currentOSM/{z}/{x}/{y}
       attribution: 'Map tiles: <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
-      maxZoom: 21
+      maxZoom: 20
     - name: Aerials
       url: //tiled.trimet.org/tilecache/tilecache.py/1.0.0/hybridOSM/{z}/{x}/{y}
       attribution: 'Map tiles: <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
-      maxZoom: 21
+      maxZoom: 20
     - name: Stamen Streets
       url: //tile.stamen.com/terrain/{z}/{x}/{y}.png
       attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
@@ -25,7 +25,7 @@ map:
     - name: Stamen Toner Lite
       url: //tile.stamen.com/toner-lite/{z}/{x}/{y}.png
       attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
-      maxZoom: 20
+      maxZoom: 19
 
 geocoder:
   url: //ws-st.trimet.org/pelias/v1
