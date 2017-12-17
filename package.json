@@ -8,7 +8,8 @@
     "license": "MPL-2.0",
     "scripts": {
         "build": "webpack --config webpack.config.js",
-        "start": "node lib/index.js",
+        "start": "yarn webpack-dev-server",
+        "web": "yarn webpack-dev-server",
         "http": "cd dist && python -m SimpleHTTPServer 8000",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
