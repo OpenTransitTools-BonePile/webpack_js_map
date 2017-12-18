@@ -20,14 +20,18 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-          template: 'lib/index.tpl.html',
-          inject: 'body',
-          filename: 'apps/simple/index.html'
+            title: 'Simple',
+            chunks: ['apps/simple/index'],
+            template: 'lib/index.tpl.html',
+            inject: 'body',
+            filename: 'apps/simple/index.html'
         }),
         new HtmlWebpackPlugin({
-          template: 'lib/index.tpl.html',
-          inject: 'body',
-          filename: 'apps/timeline/index.html'
+            title: 'TimeLine',
+            chunks: ['apps/timeline/index'],
+            template: 'lib/index.tpl.html',
+            inject: 'body',
+            filename: 'apps/timeline/index.html'
         }),
 
         new webpack.DefinePlugin({
@@ -43,7 +47,7 @@ module.exports = {
     resolve: {
         extensions: ['.html', '.js', '.json', '.scss', '.css'],
         alias: {
-            app_css: path.join(__dirname, "/lib/index.css"),
+            app_css: path.join(__dirname, "/lib/map.css"),
             pelias_css: path.join(__dirname, "/node_modules/leaflet-geocoder-mapzen/dist/leaflet-geocoder-mapzen.css"),
             leaflet_css: path.join(__dirname, "/node_modules/leaflet/dist/leaflet.css"),
             leaflet_marker: path.join(__dirname, "/node_modules/leaflet/dist/images/marker-icon.png"),
