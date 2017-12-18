@@ -10,23 +10,24 @@ module.exports = {
     cache: true,
     devtool: 'source-map',
 
-    entry: './lib/',
-    /* *
     entry: {
-        'lib': './lib/',
-        //'lib/b/index': 'module/b/index.js',
+        'apps/simple/index': './lib/apps/simple/',
+        'apps/timeline/index': './lib/apps/timeline/'
     },
-    /* */
     output: {
         path: path.join(__dirname, 'dist/'),
-        filename: '[name].js',
-        publicPath: '/'
+        filename: '[name].js'
     },
     plugins: [
         new HtmlWebpackPlugin({
           template: 'lib/index.tpl.html',
           inject: 'body',
-          filename: 'index.html'
+          filename: 'apps/simple/index.html'
+        }),
+        new HtmlWebpackPlugin({
+          template: 'lib/index.tpl.html',
+          inject: 'body',
+          filename: 'apps/timeline/index.html'
         }),
 
         new webpack.DefinePlugin({
