@@ -10,7 +10,7 @@
         "build": "webpack --config webpack.config.js",
         "start": "yarn webpack-dev-server",
         "web": "yarn webpack-dev-server",
-        "http": "cd dist && python -m SimpleHTTPServer 8000",
+        "http": "cd dist && http-server -o",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "dependencies": {
@@ -26,7 +26,9 @@
         "url-loader": "^0.6.2",
         "yaml-loader": "^0.5.0"
     },
-    "devDependencies": {},
+    "devDependencies": {
+        "http-server": "^0.10.0"
+    },
     "repository": {
         "type": "git",
         "url": "https://github.com/OpenTransitTools/map.git"
