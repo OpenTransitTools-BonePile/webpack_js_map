@@ -55,9 +55,13 @@ var icon = L.icon({
 });
 */
 
+var move = true;
+
 var customLayer = L.geoJson(null, {
     pointToLayer: function (feature, latLng) {
         if (feature.properties.hasOwnProperty('last')) {
+            if(move)
+                map.panTo(latLng);
             return new L.Marker(latLng);
         }
         return L.circleMarker(latLng);
@@ -65,9 +69,7 @@ var customLayer = L.geoJson(null, {
 });
 
 var gpxLayer = omnivore.gpx('test/running_mallorca.gpx', null, customLayer).on('ready', function() {
-    map.fitBounds(gpxLayer.getBounds(), {
-        paddingBottomRight: [40, 40]
-    });
+    console.log('done loading data');
 });
 
 var gpxTimeLayer = L.timeDimension.layer.geoJson(gpxLayer, {
