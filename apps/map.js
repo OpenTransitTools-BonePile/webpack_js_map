@@ -16,6 +16,11 @@ L.Icon.Default.mergeOptions({
 
 
 export default class MapController {
+    /**
+     * @constructor
+     * @param {Object} config ... json object (probably parsed from config.yml
+     * @see config.yml
+     */
     constructor(config) {
         this.markers = [];
         this.config = config;
@@ -83,5 +88,9 @@ export default class MapController {
             key = this.config.geocoder.MAPZEN_KEY;
         }
         L.control.geocoder(key, options).addTo(this.map);
+    }
+
+    getLeaflet() {
+        return L;
     }
 }
