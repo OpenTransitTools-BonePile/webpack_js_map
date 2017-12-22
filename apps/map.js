@@ -2,10 +2,13 @@ import 'leaflet_css';
 import 'pelias_css';
 import 'app_css';
 import 'leaflet_fullscreen_css';
+import 'leaflet_measure_css';
 
 import L from 'leaflet';
 import 'leaflet-geocoder-mapzen';
 import 'leaflet-fullscreen';
+import 'leaflet.polylinemeasure';
+
 
 
 // leaflet icons (special handling under webpack importing)
@@ -59,7 +62,10 @@ export default class MapController {
         this.control.addTo(this.map);
 
         // other controls
+        // TODO : config these on / off
         this.map.addControl(new L.Control.Fullscreen());
+        L.control.scale({maxWidth:240, metric:false, imperial:true, position: 'bottomleft'}).addTo(this.map);
+        L.control.polylineMeasure({unit:'landmiles', clearMeasurementsOnStop:true, showMeasurementsClearControl:true, showUnitControl: true}).addTo(this.map);
     }
 
     getMap() {

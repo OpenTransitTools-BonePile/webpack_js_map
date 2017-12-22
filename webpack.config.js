@@ -57,6 +57,7 @@ module.exports = {
             pelias_css: path.join(__dirname, "/node_modules/leaflet-geocoder-mapzen/dist/leaflet-geocoder-mapzen.css"),
 
             leaflet_fullscreen_css: path.join(__dirname, "/node_modules/leaflet-fullscreen/dist/leaflet.fullscreen.css"),
+            leaflet_measure_css: path.join(__dirname, "/node_modules/leaflet.polylinemeasure/Leaflet.PolylineMeasure.css"),
 
             leaflet_css: path.join(__dirname, "/node_modules/leaflet/dist/leaflet.css"),
             leaflet_marker: path.join(__dirname, "/node_modules/leaflet/dist/images/marker-icon.png"),

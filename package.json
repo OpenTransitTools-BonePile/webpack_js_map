@@ -16,9 +16,10 @@
     "dependencies": {
         "leaflet": "^1.2.0",
         "leaflet-geocoder-mapzen": "^1.9.4",
-        "leaflet-omnivore": "^0.3.4",
         "leaflet.locatecontrol": "^0.62.0",
         "leaflet-fullscreen": "^1.0.2",
+        "leaflet.polylinemeasure": "https://github.com/ppete2/Leaflet.PolylineMeasure.git",
+        "leaflet-omnivore": "^0.3.4",
         "leaflet-timedimension": "^1.1.0",
         "iso8601-js-period": "0.2.0",
         "webpack": "^3.10.0",
