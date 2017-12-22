@@ -53,7 +53,11 @@ module.exports = {
         extensions: ['.html', '.js', '.json', '.scss', '.css'],
         alias: {
             app_css: path.join(__dirname, "/apps/map.css"),
+
             pelias_css: path.join(__dirname, "/node_modules/leaflet-geocoder-mapzen/dist/leaflet-geocoder-mapzen.css"),
+
+            leaflet_fullscreen_css: path.join(__dirname, "/node_modules/leaflet-fullscreen/dist/leaflet.fullscreen.css"),
+
             leaflet_css: path.join(__dirname, "/node_modules/leaflet/dist/leaflet.css"),
             leaflet_marker: path.join(__dirname, "/node_modules/leaflet/dist/images/marker-icon.png"),
             leaflet_marker_2x: path.join(__dirname, "/node_modules/leaflet/dist/images/marker-icon-2x.png"),

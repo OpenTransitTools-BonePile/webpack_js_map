@@ -2306,6 +2306,10 @@ lcid@^1.0.0:
   dependencies:
     invert-kv "^1.0.0"
 
+leaflet-fullscreen@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/leaflet-fullscreen/-/leaflet-fullscreen-1.0.2.tgz#09c61c4bac45f63b2ee126afd87e5cd97650fc1b"
+
 leaflet-geocoder-mapzen@^1.9.4:
   version "1.9.4"
   resolved "https://registry.yarnpkg.com/leaflet-geocoder-mapzen/-/leaflet-geocoder-mapzen-1.9.4.tgz#af1025db9e3b5f53ac4206ce747dd45049f0e034"
@@ -2331,6 +2335,10 @@ leaflet-timedimension@^1.1.0:
   dependencies:
     iso8601-js-period "0.2.0"
     leaflet "~0.7.4 || ~1.0.0"
+
+leaflet.locatecontrol@^0.62.0:
+  version "0.62.0"
+  resolved "https://registry.yarnpkg.com/leaflet.locatecontrol/-/leaflet.locatecontrol-0.62.0.tgz#cf0c65170a87f2ed4b1a59e3307b773cd268d27d"
 
 leaflet@^1.2.0:
   version "1.2.0"

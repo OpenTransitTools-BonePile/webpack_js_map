@@ -1,9 +1,11 @@
 import 'leaflet_css';
 import 'pelias_css';
 import 'app_css';
+import 'leaflet_fullscreen_css';
 
 import L from 'leaflet';
 import 'leaflet-geocoder-mapzen';
+import 'leaflet-fullscreen';
 
 
 // leaflet icons (special handling under webpack importing)
@@ -55,6 +57,9 @@ export default class MapController {
         if(config.map.layerCtlPos)
             this.control.setPosition(config.map.layerCtlPos);
         this.control.addTo(this.map);
+
+        // other controls
+        this.map.addControl(new L.Control.Fullscreen());
     }
 
     getMap() {
