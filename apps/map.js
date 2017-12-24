@@ -5,6 +5,10 @@ import 'leaflet_fullscreen_css';
 import 'leaflet_measure_css';
 import 'leaflet_locate_css';
 
+import 'font-awesome/fonts/fontawesome-webfont.ttf';
+import 'font-awesome/css/font-awesome.css';
+
+
 import L from 'leaflet';
 import 'leaflet-geocoder-mapzen';
 import 'leaflet-fullscreen';

@@ -84,6 +84,14 @@ module.exports = {
             {
                 test: /\.gif$/,
                 use: 'url-loader'
+            },
+            {
+                test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                use: 'file-loader?name=./assets/img/[hash].[ext]'
+            },
+            {
+                test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                use: 'url-loader?limit=10000&mimetype=application/font-woff&name=./assets/fonts/[hash].[ext]'
             }
         ]
     }
