@@ -58,6 +58,7 @@ module.exports = {
 
             leaflet_fullscreen_css: path.join(__dirname, "/node_modules/leaflet-fullscreen/dist/leaflet.fullscreen.css"),
             leaflet_measure_css: path.join(__dirname, "/node_modules/leaflet.polylinemeasure/Leaflet.PolylineMeasure.css"),
+            leaflet_locate_css: path.join(__dirname, "/node_modules/leaflet.locatecontrol/dist/L.Control.Locate.min.css"),
 
             leaflet_css: path.join(__dirname, "/node_modules/leaflet/dist/leaflet.css"),
             leaflet_marker: path.join(__dirname, "/node_modules/leaflet/dist/images/marker-icon.png"),
