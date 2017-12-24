@@ -5,6 +5,8 @@ import 'leaflet_fullscreen_css';
 import 'leaflet_measure_css';
 import 'leaflet_locate_css';
 
+import 'leaflet.locatecontrol/dist/L.Control.Locate.css';
+
 import 'font-awesome/fonts/fontawesome-webfont.ttf';
 import 'font-awesome/css/font-awesome.css';
 
