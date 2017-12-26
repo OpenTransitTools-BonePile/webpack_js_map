@@ -8,6 +8,7 @@ import 'leaflet_locate_css';
 import 'leaflet.locatecontrol/dist/L.Control.Locate.css';
 
 //import 'font-awesome/css/font-awesome.css';
+import 'style_css';
 import 'font-awesome/less/font-awesome.less';
 
 
