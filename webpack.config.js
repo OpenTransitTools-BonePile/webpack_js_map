@@ -71,6 +71,15 @@ module.exports = {
     module: {
         loaders: [
             {
+                test: /\.js$/,
+                exclude: [/node_modules/],
+                use: 'babel-loader'
+            },
+            {
+                test: /\.json?$/,
+                use: 'json'
+            },
+            {
                 test: /\.css$/,
                 loaders: ['style-loader', 'css-loader']
             },
@@ -93,6 +102,14 @@ module.exports = {
             {
                 test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
                 use: 'url-loader?limit=10000&mimetype=application/font-woff&name=./assets/fonts/[hash].[ext]'
+            },
+            {
+                test: /\.scss$/,
+                use: ['style-loader', 'css-loader', 'sass-loader']
+            },
+            {
+                test: /\.less$/,
+                loaders: ['style-loader', 'css-loader', 'less-loader']
             }
         ]
     }
