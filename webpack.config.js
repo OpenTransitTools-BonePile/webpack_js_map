@@ -18,7 +18,8 @@ module.exports = {
     },
     output: {
         path: path.join(__dirname, 'dist/'),
-        filename: '[name].js'
+        filename: '[name].js',
+        publicPath: '/'
     },
     plugins: [
         new CopyWebpackPlugin([
@@ -97,19 +98,19 @@ module.exports = {
             },
             {
                 test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
-                use: 'file-loader?name=./webpack-assets/[name]/[hash].[ext]'
+                use: 'file-loader?name=webpack-assets/[name]/[hash].[ext]'
             },
             {
                 test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-                use: 'url-loader?limit=10000&mimetype=image/svg+xml&name=./webpack-assets/[name]/[hash].[ext]'
+                use: 'url-loader?limit=10000&mimetype=image/svg+xml&name=webpack-assets/[name]/[hash].[ext]'
             },
             {
                 test: /\.(ttf)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-                use: 'url-loader?limit=10000&mimetype=application/octet-stream&name=./webpack-assets/[name]/[hash].[ext]'
+                use: 'url-loader?limit=10000&mimetype=application/octet-stream&name=webpack-assets/[name]/[hash].[ext]'
             },
             {
                 test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-                use: 'url-loader?limit=10000&mimetype=application/font-woff&name=./webpack-assets/[name]/[hash].[ext]'
+                use: 'url-loader?limit=10000&mimetype=application/font-woff&name=webpack-assets/[name]/[hash].[ext]'
             },
             {
                 test: /\.scss$/,
