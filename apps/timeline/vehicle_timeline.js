@@ -63,12 +63,17 @@ export default class VehicleTimeline {
 
         var customLayer = L.geoJson(null, {
             pointToLayer: function (feature, latLng) {
+                var retVal = null;
                 if (feature.properties.hasOwnProperty('last')) {
                     if(move)
                         map.panTo(latLng);
-                    return new L.Marker(latLng);
+                    retVal = new L.Marker(latLng);
                 }
-                return L.circleMarker(latLng);
+                else
+                    return L.circleMarker(latLng);
+
+                // console.log(feature);
+                return retVal;
             }
         });
 
