@@ -8,9 +8,9 @@
     "license": "MPL-2.0",
     "scripts": {
         "build": "webpack --config webpack.config.js",
-        "start": "yarn webpack-dev-server",
+        "start": "yarn webpack-dev-server --port 51215",
         "web": "yarn webpack-dev-server",
-        "http": "cd dist && http-server -o",
+        "http": "cd dist && http-server -o -p 51215",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "dependencies": {
@@ -18,7 +18,7 @@
         "leaflet-geocoder-mapzen": "^1.9.4",
         "leaflet.locatecontrol": "^0.62.0",
         "leaflet-fullscreen": "^1.0.2",
-        "leaflet.polylinemeasure": "https://github.com/ppete2/Leaflet.PolylineMeasure.git",
+        "leaflet.polylinemeasure": "git+https://github.com/ppete2/Leaflet.PolylineMeasure.git",
         "leaflet-omnivore": "^0.3.4",
         "leaflet-timedimension": "^1.1.0",
         "iso8601-js-period": "0.2.0",
