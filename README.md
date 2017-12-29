@@ -10,4 +10,3 @@
     yarn install
     yarn start
     ```
- 
