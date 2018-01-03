@@ -2512,9 +2512,9 @@ leaflet.locatecontrol@^0.62.0:
   version "0.62.0"
   resolved "https://registry.yarnpkg.com/leaflet.locatecontrol/-/leaflet.locatecontrol-0.62.0.tgz#cf0c65170a87f2ed4b1a59e3307b773cd268d27d"
 
-"leaflet.polylinemeasure@git+https://github.com/ppete2/Leaflet.PolylineMeasure.git":
-  version "1.0.0"
-  resolved "git+https://github.com/ppete2/Leaflet.PolylineMeasure.git#12d72303f8b6a1246233c8812501b3fc7a0d85ae"
+leaflet.polylinemeasure@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/leaflet.polylinemeasure/-/leaflet.polylinemeasure-2.0.0.tgz#b6faca2174f16447d04e5d0e9d5e488953f07b66"
 
 leaflet@^1.2.0:
   version "1.2.0"
