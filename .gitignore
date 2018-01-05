@@ -4,10 +4,12 @@ dist
 # Logs
 logs
 *.log
+*.out
 npm-debug.log*
 *~
 config.yml
 .DS_Store
+
 
 # Runtime data
 pids
