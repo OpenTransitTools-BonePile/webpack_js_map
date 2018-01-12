@@ -8,18 +8,20 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <title>TriMet - Trip Planner, TransitTracker, Service Alerts</title>
-    
+
     <meta name="robots"      content="all"/>
     <meta name="Keywords"    content="Transit, Schedule, Information, Trip Planning"/>
     <meta name="Description" content="Transit Information System"/>
+
 
     <link rel="shortcut icon" href="//trimet.org/favicon.ico" type="image/x-icon">
     <link rel="icon" href="//trimet.org/favicon.ico" type="image/x-icon">
 
     <!--ABSTRACT hf_include()-->
-    <link href="//fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+
 
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -48,6 +50,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <link href="//trimet.org/global/img/favicons/favicon.ico" rel="stylesheet" media="all" />
+    <link href="//trimet.org/asset/css/style.min.css" rel="stylesheet"  media="all" />
     <link href="//trimet.org/global/css/styles.min.css" rel="stylesheet" type="text/css" media="all" />
     <link href="//trimet.org/global/css/print.css" rel="stylesheet" type="text/css" media="print" />
     <link href="//trimet.org/global/css/tools.css" rel="stylesheet" type="text/css" media="all" />
@@ -68,15 +71,13 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
     <script src="//trimet.org/global/js/menu.min.js" type="text/javascript"></script>
 
-
-
 </head>
-<body class="env-develop" id="top" onLoad="/** ABSTRACT **/">
+<body class="env-develop" id="top" onLoad="javascript:select_form()">
     <div id="application">
-    
 
-    
-    
+
+
+
 <!-- begin nav -->
 <nav class="mast " role="navigation">
     <div class="mast-wrapper wrapper">
@@ -113,436 +114,354 @@
                             <div class="menu-item-sub">Find a Nearby Stop, Get Stop Details</div>
                         </a>
                     </li>
-    <li class="menu-item menu-item-expandable drawer " role="treeitem">
-      <a href="//trimet.org/fares/index.htm" class="menu-item-header drawer-header" title="Fares" onclick="_gaq.push(['_trackEvent', 'Menu', 'Fares', 'Main']);">
-        <h3 class="menu-item-main">Fares</h3>
-        <div class="menu-item-sub">Prices, Passes, App, Where to Buy</div>
-        <div class="drawer-marker"><i class="drawer-marker-a"></i><i class="drawer-marker-b"></i></div>
-      </a>
-    
-      <div class="menu-item-content drawer-content js-measure" role="group" aria-hidden="true">
-        <ul class="wrapper">
-                      <div class="wrapper">
-                  <div class="l-drawer-fares l-drawer-group slice">
-                  
-                  
-                  
-                    <div class="slice-item slice-item-single l-drawer-fares-container">
-                      <a href="https://myhopcard.com" class="hop-container">
-                        <img src="//trimet.org/global/img/drawer/hop-logo.png" height="250" alt="Hop Fastpass logo" class="hop-logo">
-                        <h3>Hop Fastpass is your new ticket to ride.</h3>
-                        <p>
-                          <span class="check">Tap and Go</span>
-                          <span class="check">Save as You Ride</span>
-                          <span class="check">Reload Anywhere</span>
-                        </p>
-                      </a>
-                    </div>
-                  
-                  
-                    <div class="slice-item" style="padding-top:0">
-                      <div class="l-drawer-group slice" style="margin-top:0">
-                        
-                        <div class="l-drawer-farecategory">
-                          <a href="//trimet.org/fares/index.htm" class="adult">
-                            <div class="faretype">
-                              <h3>Adult</h3>
-                              <p class="media-message">For ages 18&ndash;64</p>
-                            </div>
-                            <h4 class="price">
-                              <b>$2.50</b>
-                              Ride for 2&frac12; Hours
-                            </h4>
-                            <p class="daypass">
-                              <b>$5</b> 
-                              <span class="check">Day Pass</span>
-                            </p>
-                          </a>
-                        </div>
-                  
-                        <div class="l-drawer-farecategory">
-                          <a href="//trimet.org/fares/honoredcitizen.htm" class="honoredcitizen">
-                            <div class="faretype">
-                              <h3>Honored Citizen</h3>
-                              <p class="media-message">65+, Medicare or disability</p>
-                            </div>
-                            <h4 class="price">
-                              <b>$1.25</b>
-                              Ride for 2&frac12; Hours
-                            </h4>
-                            <p class="daypass">
-                              <b>$2.50</b>
-                              <span class="check">Day Pass</span>
-                            </p>
-                          </a>
-                        </div>
-                  
-                        <div class="l-drawer-farecategory">
-                          <a href="//trimet.org/fares/youth.htm" class="youth">
-                            <div class="faretype">
-                              <h3>Youth</h3>
-                              <p class="media-message">7&ndash;17 or high school/GED</p>
-                            </div>
-                            <h4 class="price">
-                              <b>$1.25</b>
-                              Ride for 2&frac12; Hours
-                            </h4>
-                            <p class="daypass">
-                              <b>$2.50</b>
-                              <span class="check">Day Pass</span>
-                            </p>
-                          </a>
-                        </div>
-                      </div>
-                  
-                      <a class="l-drawer-link" href="//trimet.org/fares/index.htm" onclick="_gaq.push(['_trackEvent', 'Menu', 'Learn More', 'Fares']);" style="text-align:right; padding-right:0;"><i class="icon icon-8 icon-right-arrow"></i> Learn more about TriMet fares</a>
-                  
-                    </div>
-                  
-                  
-                  </div>
-                </div>
-    
-        </ul>
-      </div>
-    </li>
-    <li class="menu-item menu-item-expandable drawer " role="treeitem">
-      <a href="//trimet.org/guide/index.htm" class="menu-item-header drawer-header" title="Guide" onclick="_gaq.push(['_trackEvent', 'Menu', 'Guide', 'Main']);">
-        <h3 class="menu-item-main">Guide</h3>
-        <div class="menu-item-sub">Our Services, Park &amp; Ride, Bike Parking</div>
-        <div class="drawer-marker"><i class="drawer-marker-a"></i><i class="drawer-marker-b"></i></div>
-      </a>
-    
-      <div class="menu-item-content drawer-content js-measure" role="group" aria-hidden="true">
-        <ul class="wrapper">
-                      <div class="wrapper">
-                  <div class="l-drawer-howto l-drawer-group slice">
-                    <div class="slice-item slice-item-double l-drawer-grouppushhigh">
-                      <h4 class="hide">Modes</h4>
-                      <section class="l-modesbar l-modesbar-clear">
-                      
-                        <div class="l-modesbar-main">
-                          <ul class="wrapper wrapper-90 slice slice-responsive underline">
-                            <li class="slice-item">
-                              <a class="mode mode-media mode-bus has-hover" href="//trimet.org/bus/index.htm" onclick="_gaq.push(['_trackEvent', 'Bottom', 'Bus', 'Modal']);">
-                                <div class="mode-image"></div>
-                                <div class="mode-name mode-push">
-                                  <h4 class="mode-bold">BUS</h4>
-                                  <div class="mode-name-small">&nbsp;</div>
-                                </div>
-                              </a>
-                            </li>
-                      
-                            <li class="slice-item">
-                              <a class="mode mode-media mode-max has-hover" href="//trimet.org/max/index.htm" onclick="_gaq.push(['_trackEvent', 'Bottom', 'MAX', 'Modal']);">
-                                <div class="mode-image"></div>
-                                <div class="mode-name mode-push">
-                                  <h4 class="mode-bold">MAX</h4>
-                                  <div class="mode-name-small">Light Rail</div>
-                                </div>
-                              </a>
-                            </li>
-                            <li class="slice-item">
-                              <a class="mode mode-media mode-wes has-hover" href="//trimet.org/wes/index.htm" onclick="_gaq.push(['_trackEvent', 'Bottom', 'WES', 'Modal']);">
-                                <div class="mode-image"></div>
-                                <div class="mode-name mode-push">
-                                  <h4 class="mode-bold">WES</h4>
-                                  <div class="mode-name-small">Commuter Rail</div>
-                                </div>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      
-                        <div class="l-modesbar-alt">
-                          <ul class="wrapper wrapper-60 slice slice-responsive">
-                            <li class="slice-item">
-                              <a class="mode mode-lift has-hover" href="//trimet.org/lift/index.htm" onclick="_gaq.push(['_trackEvent', 'Bottom', 'LIFT', 'Modal']);">
-                                <div class="mode-icon"><div class="icon icon-32 icon-lift"></div></div>
-                                <div class="mode-name">
-                                  <h4 class="mode-name-small mode-bold mode-secondary">LIFT Paratransit</h4>
-                                </div>
-                              </a>
-                            </li>
-                      
-                            <li class="slice-item">
-                              <a class="mode mode-lift has-hover" href="//trimet.org/streetcar/index.htm" onclick="_gaq.push(['_trackEvent', 'Bottom', 'Streetcar', 'Modal']);">
-                                <div class="mode-icon"><div class="icon icon-32 icon-streetcar"></div></div>
-                                <div class="mode-name">
-                                  <h4 class="mode-name-small mode-bold mode-secondary">Portland Streetcar</h4>
-                                </div>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </section>
-                    </div>
-                    <div class="slice-item">
-                      <h4 class="hide">FAQ</h4>
-                      <ul class="drawer-list">
-                        <li class="drawer-item"><a class="how-to-link l-drawer-link" href="//trimet.org/fares/howtopay.htm" onclick="_gaq.push(['_trackEvent', 'Menu', 'Paying your fare', 'How To']);"><i class="icon icon-8 icon-right-arrow"></i>Paying your fare</a></li>
-                        <li class="drawer-item"><a class="how-to-link l-drawer-link" href="//trimet.org/bikes/index.htm" onclick="_gaq.push(['_trackEvent', 'Menu', 'Bring your bike', 'How To']);"><i class="icon icon-8 icon-right-arrow"></i>Bringing your bike</a></li>
-                        <li class="drawer-item"><a class="how-to-link l-drawer-link" href="//trimet.org/parkandride/index.htm" onclick="_gaq.push(['_trackEvent', 'Menu', 'Park Ride', 'How To']);"><i class="icon icon-8 icon-right-arrow"></i>Park &amp; Ride</a></li>
-                        <li class="drawer-item"><a class="how-to-link l-drawer-link" href="//trimet.org/guide/rules.htm" onclick="_gaq.push(['_trackEvent', 'Menu', 'Rules for riding', 'How To']);"><i class="icon icon-8 icon-right-arrow"></i>Rules for riding</a></li>
-                        <li class="drawer-item"><a class="how-to-link l-drawer-link" href="//trimet.org/access/index.htm" onclick="_gaq.push(['_trackEvent', 'Menu', 'Acessibility', 'How To']);"><i class="icon icon-8 icon-right-arrow"></i>Accessibility</a></li>
-                        <li class="drawer-item"><a class="how-to-link l-drawer-link" href="//trimet.org/guide/kids.htm" onclick="_gaq.push(['_trackEvent', 'Menu', 'Traveling with kids', 'How To']);"><i class="icon icon-8 icon-right-arrow"></i>Traveling with kids</a></li>
-                        <li class="drawer-item"><a class="how-to-link l-drawer-link" href="//trimet.org/fares/fieldtrips.htm" onclick="_gaq.push(['_trackEvent', 'Menu', 'Group and field trips', 'How To']);"><i class="icon icon-8 icon-right-arrow"></i>Groups and field trips</a></li>
-                        <li class="drawer-item"><a class="how-to-link l-drawer-link" href="//trimet.org/guide/what-can-i-bring.htm" onclick="_gaq.push(['_trackEvent', 'Menu', 'What can I bring?', 'How To']);"><i class="icon icon-8 icon-right-arrow"></i>What can I bring?</a></li>
-                      </ul>
-                  
-                      <ul class="l-drawer-media-wrapper l-drawer-media-triptools">
-                        <li><a href="//trimet.org/tools/index.htm" class="media" onclick="_gaq.push(['_trackEvent', 'Menu', 'Trip Tools', 'How To']);">
-                            <div class="media-wrapper">
-                              <div class="media-preview"><img height="50" src="//trimet.org/global/img/drawer/triptools.png" alt="" class="media-img"></div>
-                              <div class="media-content">
-                                <h5 class="media-title">Trip Tools</h5>
-                                <div class="media-message">Plan your trips and get service info on-the-go.</div>
-                              </div>
-                            </div></a></li>
-                      </ul>
-                  
-                    </div>
-                  </div>
-                </div>
-    
-        </ul>
-      </div>
-    </li>
-    <li class="menu-item menu-item-expandable drawer " role="treeitem">
-      <a href="//trimet.org/contact/index.htm" class="menu-item-header drawer-header" title="Support" onclick="_gaq.push(['_trackEvent', 'Menu', 'Support', 'Main']);">
-        <h3 class="menu-item-main">Support</h3>
-        <div class="menu-item-sub">Customer Service, Lost &amp; Found</div>
-        <div class="drawer-marker"><i class="drawer-marker-a"></i><i class="drawer-marker-b"></i></div>
-      </a>
-    
-      <div class="menu-item-content drawer-content js-measure" role="group" aria-hidden="true">
-        <ul class="wrapper">
-                      <div class="wrapper">
-                  <div class="l-drawer-support l-drawer-group slice">
-                  
-                    <div class="slice-item slice-item-single l-drawer-grouppush ">
-                      <h4 class="hide">Common Links</h4>
-                      <ul class="l-drawer-media-wrapper l-drawer-block">
-                        <li><a href="//trimet.org/contact/customerservice.htm" class="media" onclick="_gaq.push(['_trackEvent', 'Menu', 'Questions comments or suggestions', 'Support']);">
-                          <div class="media-wrapper">
-                            <div class="media-content">
-                              <div class="media-title">Customer Service</div>
-                            </div>
-                          </div>
-                        </a></li>
-                  
-                        <li><a href="//trimet.org/contact/customerservice.htm" class="media" onclick="_gaq.push(['_trackEvent', 'Menu', 'Employee commendation or complaint', 'Support']);">
-                          <div class="media-wrapper">
-                            <div class="media-content">
-                              <div class="media-title">Employee commendation or complaint</div>
-                            </div>
-                          </div>
-                        </a></li>
-                  
-                        <li><a href="//trimet.org/contact/lostandfound.htm" class="media" onclick="_gaq.push(['_trackEvent', 'Menu', 'Lost and Found', 'Support']);">
-                          <div class="media-wrapper">
-                            <div class="media-content">
-                              <div class="media-title">Lost &amp; Found</div>
-                            </div>
-                          </div>
-                        </a></li>
-                  
-                        <li><a href="https://trimet.transitsherpa.com/feedback" class="media" onclick="_gaq.push(['_trackEvent', 'Menu', 'TriMet Tickets app support', 'Support']);">
-                          <div class="media-wrapper">
-                            <div class="media-content">
-                              <div class="media-title">TriMet Tickets app support</div>
-                            </div>
-                          </div>
-                        </a></li>
-                  
-                        <li><a href="//trimet.org/contact/ttfeedback.htm" class="media" onclick="_gaq.push(['_trackEvent', 'Menu', 'TransitTracker feedback', 'Support']);">
-                          <div class="media-wrapper">
-                            <div class="media-content">
-                              <div class="media-title">TransitTracker feedback</div>
-                            </div>
-                          </div>
-                        </a></li>
-                  
-                      </ul>
-                    </div>
-                  
-                    <div class="slice-item l-drawer-grouppush ">
-                      <h4 class="hide">Contact</h4>
-                      <div class="l-drawer-block blank">
-                        <ul class="l-drawer-media-wrapper">
-                          <li><a href="tel:+15032387433" class="media" onclick="_gaq.push(['_trackEvent', 'Menu', '503238RIDE', 'Support']);">
-                            <div class="media-wrapper">
-                              <div class="media-content">
-                                <div class="media-title">503-238-RIDE (7433)</div>
-                                <div class="media-message">Arrival information: 24 hours a day</div>
-                                <div class="media-message">Customer service: 7:30 a.m.&ndash;5:30 p.m. daily</div>
-                              </div>
-                            </div>
-                          </a></li>
-                  
-                          <li><a href="//trimet.org/contact/tto.htm" class="media" onclick="_gaq.push(['_trackEvent', 'Menu', 'TriMet Ticket Office', 'Support']);">
-                            <div class="media-wrapper">
-                              <div class="media-content">
-                                <div class="media-title">TriMet Ticket Office</div>
-                  
-                                <div class="media-message">Pioneer Courthouse Square</div>
-                                <div class="media-message">701 SW 6th Ave., Portland, OR 97204</div>
-                  
-                                <div class="media-message">8:30 a.m.&ndash;5:30 p.m. weekdays</div>
-                              </div>
-                            </div>
-                          </a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  
-                    <div class="slice-item slice-item-expanded slice-item-single">
-                      <h3 class="l-drawer-header">Common questions</h3>
-                  
-                      <ul class="drawer-list drawer-list-wide">
-                        <li class="drawer-item"><a class="l-drawer-link" href="https://trimet.desk.com/customer/portal/articles/447616-the-bus-drove-right-by-without-stopping-to-pick-me-up" onclick="_gaq.push(['_trackEvent', 'Menu', 'CQ1', 'Support']);"><i class="icon icon-8 icon-right-arrow"></i> The bus drove right by without stopping to pick me up</a></li>
-                        <li class="drawer-item"><a class="l-drawer-link" href="https://trimet.desk.com/customer/portal/articles/447666-are-dogs-allowed-on-board-" onclick="_gaq.push(['_trackEvent', 'Menu', 'CQ2', 'Support']);"><i class="icon icon-8 icon-right-arrow"></i> Are dogs allowed on board?</a></li>
-                        <li class="drawer-item"><a class="l-drawer-link" href="https://trimet.desk.com/customer/portal/articles/447652-my-bus-train-was-late" onclick="_gaq.push(['_trackEvent', 'Menu', 'CQ3', 'Support']);"><i class="icon icon-8 icon-right-arrow"></i> Why was my bus/train late?</a></li>
-                        <li class="drawer-item"><a class="l-drawer-link" href="https://trimet.desk.com/customer/portal/articles/686251-why-isn%E2%80%99t-there-more-space-for-bikes-on-board-max-" onclick="_gaq.push(['_trackEvent', 'Menu', 'CQ4', 'Support']);"><i class="icon icon-8 icon-right-arrow"></i> Why isn&rsquo;t there more space for bikes on board MAX?</a></li>
-                        <li class="drawer-item"><a class="l-drawer-link" href="https://trimet.desk.com/customer/portal/articles/729139-why-isn-t-there-more-space-for-bikes-on-the-bus-bike-racks-" onclick="_gaq.push(['_trackEvent', 'Menu', 'CQ5', 'Support']);"><i class="icon icon-8 icon-right-arrow"></i> Why isn&rsquo;t there more space for bikes on the bus racks?</a></li>
-                        <li class="drawer-item"><a class="l-drawer-link" href="https://trimet.desk.com/" onclick="_gaq.push(['_trackEvent', 'Menu', 'CQALL', 'Support']);"><i class="icon icon-8 icon-right-arrow"></i> VIEW ALL</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-    
-        </ul>
-      </div>
-    </li>
-    <li class="menu-item menu-item-expandable drawer drawer-alt" role="treeitem">
-      <a href="javascript:;" class="menu-item-header drawer-header" title="More" onclick="_gaq.push(['_trackEvent', 'Menu', 'More', 'Main']);">
-        <h3 class="menu-item-main">More</h3>
-        
-        <div class="drawer-marker"><i class="drawer-marker-a"></i><i class="drawer-marker-b"></i></div>
-      </a>
-    
-      <div class="menu-item-content drawer-content js-measure" role="group" aria-hidden="true">
-        <ul class="wrapper">
-                      <div class="wrapper">
-                  <div class="l-drawer-more l-drawer-group slice">
-                    <div class="slice-item slice-item-partial l-drawer-grouppush">
-                      <div class="l-drawer-block">
-                        <div class="media">
-                          <div class="media-wrapper">
-                            <div class="media-content">
-                              <h4 class="media-title color-dark">Get service updates by email or SMS</h4>
-                              <div class="media-message">Sign up for service updates and rider news, or manage your existing account or unsubscribe.</div>
-                            </div>
-                          </div>
-                        </div>
-                        <form autocomplete="off" action="https://public.govdelivery.com/accounts/ORTRIMET/subscribers/qualify" id="gov_form">
-                  
-                          <select id="subscription_type" name="subscription_type" class="hidden">
-                            <option value="email">Email</option>
-                            <option value="phone">SMS/Text Message</option>
-                          </select>
-                            <div class="field field-text  vertical-push" data-formid="email">
-                        <label for="email" class="input-label field-label">Email or phone #</label>
-                  
-                      <div class="input-wrapper" data-type="text">
-                    <input id="email" name="email"
-                      
-                      type="text" 
-                      class="input input-text field-input"
-                      placeholder="Email or phone #"  />
-                  </div>
-                  
-                    <div class="field-error"></div>
-                    <ul class="field-autocomplete"></ul>
-                  
-                    
-                  </div>
-                  
-                          <input type="submit" class="button button-submit tt-stop-submit button-alt button-small" value="Submit" />
-                  
-                        </form>
-                      </div>
-                    </div>
-                    <div class="slice-item slice-item-single">
-                      <h4 class="hide">Links</h4>
-                      <ul class="l-drawer-media-wrapper">
-                  
-                        <li><a href="https://myhopcard.com" class="media">
-                          <div class="media-wrapper" onclick="_gaq.push(['_trackEvent', 'Menu', 'TriMet Tickets App', 'More']);">
-                            <div class="media-preview"><img height="50" src="//trimet.org/global/img/drawer/hop.png" alt="" class="media-img"></div>
-                            <div class="media-content">
-                              <h5 class="media-title">Hop Fastpass<sup>&trade;</sup></h5>
-                              <div class="media-message">Tap to ride using a card or smartphone.</div>
-                            </div>
-                          </div>
-                        </a></li>
-                  
-                        <li><a href="//trimet.org/club/index.htm" class="media" onclick="_gaq.push(['_trackEvent', 'Menu', 'Riders Club', 'More']);">
-                          <div class="media-wrapper">
-                            <div class="media-preview"><img height="50" src="//trimet.org/global/img/drawer/ridersclub.png" alt="" class="media-img"></div>
-                            <div class="media-content">
-                              <h5 class="media-title">Riders Club</h5>
-                              <div class="media-message">Monthly pass giveaways, surveys, contests, events and more.</div>
-                            </div>
-                          </div>
-                        </a></li>
-                  
-                        <li><a href="http://howweroll.trimet.org/" class="media" onclick="_gaq.push(['_trackEvent', 'Menu', 'TriMet Blog', 'More']);">
-                          <div class="media-wrapper">
-                            <div class="media-preview"><img height="50" src="//trimet.org/global/img/drawer/howweroll.png" alt="" class="media-img"></div>
-                            <div class="media-content">
-                              <h5 class="media-title">How We Roll blog</h5>
-                              <div class="media-message">Transit news, behind-the-scenes features and fun stuff for riders.</div>
-                            </div>
-                          </div>
-                        </a></li>
-                      </ul>
-                    </div>
-                  
-                    <div class="slice-item slice-item-single">
-                      <ul class="l-drawer-media-wrapper">
-                        <li>
-                          <a href="//trimet.org/gear/index.htm" class="media" onclick="_gaq.push(['_trackEvent', 'Menu', 'Gear Store', 'More']);">
-                            <div class="media-wrapper">
-                              <div class="media-preview"><img height="50" src="//trimet.org/global/img/drawer/gearstore.png" alt="" class="media-img"></div>
-                              <div class="media-content">
-                                <h5 class="media-title">Gear Store</h5>
-                                <div class="media-message">TriMet mugs, bags, t-shirts, posters and more.</div>
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="//trimet.org/apps/index.htm" class="media" onclick="_gaq.push(['_trackEvent', 'Menu', 'App Center', 'More']);">
-                            <div class="media-wrapper">
-                              <div class="media-preview"><img height="50" src="//trimet.org/global/img/drawer/apps.png" alt="" class="media-img"></div>
-                              <div class="media-content">
-                                <h5 class="media-title">App Center</h5>
-                                <div class="media-message">Transit apps from independent software developers.</div>
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="//trimet.org/about" class="media aboutLink" onclick="_gaq.push(['_trackEvent', 'Menu', 'About Us', 'More']);">
-                            <div class="media-wrapper">
-                              <div class="media-preview"><img height="50" src="//trimet.org/global/img/drawer/rosette.png" alt="" class="media-img"></div>
-                              <div class="media-content">
-                                <h5 class="media-title">About us</h5>
-                                <div class="media-message">Who we are, ridership stats, news, safety/security and more.</div>
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-    
-        </ul>
-      </div>
-    </li>
+              <li class="menu-item menu-item-expandable drawer " role="treeitem">
+                <a href="//trimet.org/fares/index.htm" class="menu-item-header drawer-header" title="Fares" onclick="_gaq.push(['_trackEvent', 'Menu', 'Fares', 'Main']);">
+                  <h3 class="menu-item-main">Fares</h3>
+                  <div class="menu-item-sub">Prices, Passes, App, Where to Buy</div>
+                  <div class="drawer-marker"><i class="drawer-marker-a"></i><i class="drawer-marker-b"></i></div>
+                </a>
 
+                <div class="menu-item-content drawer-content js-measure" role="group" aria-hidden="true">
+                  <ul class="wrapper">
+                    <div class="wrapper">
+                    <div class="l-drawer-fares l-drawer-group slice">
+                      <div class="slice-item slice-item-single l-drawer-fares-container">
+                        <a href="https://myhopcard.com" class="hop-container" onclick="_gaq.push(['_trackEvent', 'Menu', 'Fares', 'Hop']);">
+                          <img src="//trimet.org/global/img/drawer/hop-logo.png" alt="Hop Fastpass logo" class="hop-logo">
+                          <h3>Hop Fastpass is your new ticket to ride.</h3>
+                          <p>
+                            <span class="check">Tap and Go</span>
+                            <span class="check">Save as You Ride</span>
+                            <span class="check">Reload Anywhere</span>
+                          </p>
+                        </a>
+                      </div>
+                      <div class="slice-item" style="padding-top:0">
+                        <div class="l-drawer-group slice" style="margin-top:0">
+
+                          <div class="l-drawer-farecategory">
+                            <a href="//trimet.org/fares/index.htm" class="adult" onclick="_gaq.push(['_trackEvent', 'Menu', 'Fares', 'Adult']);">
+                              <div class="faretype">
+                                <h3>Adult</h3>
+                                <p class="media-message">For ages 18&ndash;64</p>
+                              </div>
+                              <h4 class="price">
+                                <b>$2.50</b>
+                                Ride for 2&frac12; Hours
+                              </h4>
+                              <p class="daypass">
+                                <b>$5</b>
+                                <span class="check">Day Pass</span>
+                              </p>
+                            </a>
+                          </div>
+
+                          <div class="l-drawer-farecategory">
+                            <a href="//trimet.org/fares/honoredcitizen.htm" class="honoredcitizen" onclick="_gaq.push(['_trackEvent', 'Menu', 'Fares', 'Honored Citizen']);">
+                              <div class="faretype">
+                                <h3>Honored Citizen</h3>
+                                <p class="media-message">65+, Medicare or disability</p>
+                              </div>
+                              <h4 class="price">
+                                <b>$1.25</b>
+                                Ride for 2&frac12; Hours
+                              </h4>
+                              <p class="daypass">
+                                <b>$2.50</b>
+                                <span class="check">Day Pass</span>
+                              </p>
+                            </a>
+                          </div>
+
+                          <div class="l-drawer-farecategory">
+                            <a href="//trimet.org/fares/youth.htm" class="youth" onclick="_gaq.push(['_trackEvent', 'Menu', 'Fares', 'Youth']);">
+                              <div class="faretype">
+                                <h3>Youth</h3>
+                                <p class="media-message">7&ndash;17 or high school/GED</p>
+                              </div>
+                              <h4 class="price">
+                                <b>$1.25</b>
+                                Ride for 2&frac12; Hours
+                              </h4>
+                              <p class="daypass">
+                                <b>$2.50</b>
+                                <span class="check">Day Pass</span>
+                              </p>
+                            </a>
+                          </div>
+                        </div>
+                        <a class="l-drawer-link" href="//trimet.org/fares/index.htm" onclick="_gaq.push(['_trackEvent', 'Menu', 'Fares', 'Learn more']);" style="text-align:right; padding-right:0;"><i class="icon icon-8 icon-right-arrow"></i>Learn more about TriMet fares</a>
+                      </div>
+                    </div>
+                  </div>
+          </ul>
+        </div>
+      </li>
+
+              <li class="menu-item menu-item-expandable drawer " role="treeitem">
+                <a href="//trimet.org/guide/index.htm" class="menu-item-header drawer-header" title="Guide" onclick="_gaq.push(['_trackEvent', 'Menu', 'Guide', 'Main']);">
+                  <h3 class="menu-item-main">Guide</h3>
+                  <div class="menu-item-sub">Our Services, Park &amp; Ride, Bike Parking</div>
+                  <div class="drawer-marker"><i class="drawer-marker-a"></i><i class="drawer-marker-b"></i></div>
+                </a>
+
+                <div class="menu-item-content drawer-content js-measure" role="group" aria-hidden="true">
+                  <ul class="wrapper">
+                    <div class="wrapper">
+                            <div class="l-drawer-howto l-drawer-group slice">
+                              <div class="slice-item slice-item-double l-drawer-grouppushhigh">
+                                <h4 class="hide">Modes</h4>
+                                <section class="l-modesbar l-modesbar-clear">
+
+                                  <div class="l-modesbar-main">
+                                    <ul class="wrapper wrapper-90 slice slice-responsive underline">
+                                      <li class="slice-item">
+                                        <a class="mode mode-media mode-bus has-hover" href="//trimet.org/bus/index.htm" onclick="_gaq.push(['_trackEvent', 'Bottom', 'Bus', 'Modal']);">
+                                          <div class="mode-image"></div>
+                                          <div class="mode-name mode-push">
+                                            <h4 class="mode-bold">BUS</h4>
+                                            <div class="mode-name-small">&nbsp;</div>
+                                          </div>
+                                        </a>
+                                      </li>
+
+                                      <li class="slice-item">
+                                        <a class="mode mode-media mode-max has-hover" href="//trimet.org/max/index.htm" onclick="_gaq.push(['_trackEvent', 'Bottom', 'MAX', 'Modal']);">
+                                          <div class="mode-image"></div>
+                                          <div class="mode-name mode-push">
+                                            <h4 class="mode-bold">MAX</h4>
+                                            <div class="mode-name-small">Light Rail</div>
+                                          </div>
+                                        </a>
+                                      </li>
+                                      <li class="slice-item">
+                                        <a class="mode mode-media mode-wes has-hover" href="//trimet.org/wes/index.htm" onclick="_gaq.push(['_trackEvent', 'Bottom', 'WES', 'Modal']);">
+                                          <div class="mode-image"></div>
+                                          <div class="mode-name mode-push">
+                                            <h4 class="mode-bold">WES</h4>
+                                            <div class="mode-name-small">Commuter Rail</div>
+                                          </div>
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+
+                                  <div class="l-modesbar-alt">
+                                    <ul class="wrapper wrapper-60 slice slice-responsive">
+                                      <li class="slice-item">
+                                        <a class="mode mode-lift has-hover" href="//trimet.org/lift/index.htm" onclick="_gaq.push(['_trackEvent', 'Bottom', 'LIFT', 'Modal']);">
+                                          <div class="mode-icon"><div class="icon icon-32 icon-lift"></div></div>
+                                          <div class="mode-name">
+                                            <h4 class="mode-name-small mode-bold mode-secondary">LIFT Paratransit</h4>
+                                          </div>
+                                        </a>
+                                      </li>
+
+                                      <li class="slice-item">
+                                        <a class="mode mode-lift has-hover" href="//trimet.org/streetcar/index.htm" onclick="_gaq.push(['_trackEvent', 'Bottom', 'Streetcar', 'Modal']);">
+                                          <div class="mode-icon"><div class="icon icon-32 icon-streetcar"></div></div>
+                                          <div class="mode-name">
+                                            <h4 class="mode-name-small mode-bold mode-secondary">Portland Streetcar</h4>
+                                          </div>
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </section>
+                              </div>
+                              <div class="slice-item">
+                                <h4 class="hide">FAQ</h4>
+                                <ul class="drawer-list">
+                                  <li class="drawer-item"><a class="how-to-link l-drawer-link" href="//trimet.org/fares/howtopay.htm" onclick="_gaq.push(['_trackEvent', 'Menu', 'Guide', 'Paying your fare']);"><i class="icon icon-8 icon-right-arrow"></i>Paying your fare</a></li>
+                                  <li class="drawer-item"><a class="how-to-link l-drawer-link" href="//trimet.org/bikes/index.htm" onclick="_gaq.push(['_trackEvent', 'Menu', 'Guide', 'Bring your bike']);"><i class="icon icon-8 icon-right-arrow"></i>Bringing your bike</a></li>
+                                  <li class="drawer-item"><a class="how-to-link l-drawer-link" href="//trimet.org/parkandride/index.htm" onclick="_gaq.push(['_trackEvent', 'Menu', 'Guide', 'Park Ride']);"><i class="icon icon-8 icon-right-arrow"></i>Park &amp; Ride</a></li>
+                                  <li class="drawer-item"><a class="how-to-link l-drawer-link" href="//trimet.org/guide/rules.htm" onclick="_gaq.push(['_trackEvent', 'Menu', 'Guide', 'Rules for riding']);"><i class="icon icon-8 icon-right-arrow"></i>Rules for riding</a></li>
+                                  <li class="drawer-item"><a class="how-to-link l-drawer-link" href="//trimet.org/access/index.htm" onclick="_gaq.push(['_trackEvent', 'Menu', 'Guide', 'Acessibility']);"><i class="icon icon-8 icon-right-arrow"></i>Accessibility</a></li>
+                                  <li class="drawer-item"><a class="how-to-link l-drawer-link" href="//trimet.org/guide/kids.htm" onclick="_gaq.push(['_trackEvent', 'Menu', 'Guide', 'Traveling with kids']);"><i class="icon icon-8 icon-right-arrow"></i>Traveling with kids</a></li>
+                                  <li class="drawer-item"><a class="how-to-link l-drawer-link" href="//trimet.org/fares/fieldtrips.htm" onclick="_gaq.push(['_trackEvent', 'Menu', 'Guide', 'Group and field trips']);"><i class="icon icon-8 icon-right-arrow"></i>Groups and field trips</a></li>
+                                  <li class="drawer-item"><a class="how-to-link l-drawer-link" href="//trimet.org/guide/what-can-i-bring.htm" onclick="_gaq.push(['_trackEvent', 'Menu', 'Guide', 'What can I bring?']);"><i class="icon icon-8 icon-right-arrow"></i>What can I bring?</a></li>
+                                </ul>
+
+                                <div class="link-block-small">
+                                  <a href="//trimet.org/tools/index.htm" onclick="_gaq.push(['_trackEvent', 'Menu', 'Guide', 'Trip Tools']);" class="media">
+                                    <div class="media-wrapper">
+                                      <div class="media-preview"><img height="50" src="//trimet.org/global/img/drawer/triptools.png" alt="" class="media-img"></div>
+                                      <div class="media-content">
+                                        <h5 class="media-title">Trip Tools</h5>
+                                        <div class="media-message">Plan your trips and get service info on-the-go.</div>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="menu-item menu-item-expandable drawer " role="treeitem">
+                <a href="//trimet.org/contact/index.htm" class="menu-item-header drawer-header" title="Support" onclick="_gaq.push(['_trackEvent', 'Menu', 'Support', 'Main']);">
+                  <h3 class="menu-item-main">Support</h3>
+                  <div class="menu-item-sub">Customer Service, Lost &amp; Found</div>
+                  <div class="drawer-marker"><i class="drawer-marker-a"></i><i class="drawer-marker-b"></i></div>
+                </a>
+
+                <div class="menu-item-content drawer-content js-measure" role="group" aria-hidden="true">
+                  <ul class="wrapper">
+                        <div class="wrapper">
+                            <div class="l-drawer-support l-drawer-group slice">
+
+                              <div class="slice-item slice-item-single" style="padding-top:0">
+                                <div class="l-drawer-group slice" style="margin-top:0">
+
+                                  <div class="link-block">
+                                    <a href="//trimet.org/contact/faq.htm" onclick="_gaq.push(['_trackEvent', 'Menu', 'Support', 'Common Questions']);" class="commonquestions">
+                                      <div class="overlay">
+                                        <h3>Common Questions</h3>
+                                        <div class="media-message">Get answers to common questions about our service and fares.</div>
+                                      </div>
+                                    </a>
+                                  </div>
+
+                                  <div class="link-block">
+                                    <a href="//trimet.org/contact/customerservice.htm" onclick="_gaq.push(['_trackEvent', 'Menu', 'Support', 'Customer Service']);" class="customerservice">
+                                      <div class="overlay">
+                                        <h3>Customer Service</h3>
+                                        <div class="media-message"><!--We&rsquo;re here to help! -->Send us your questions, comments and suggestions.</div>
+                                      </div>
+                                    </a>
+                                  </div>
+
+                                  <div class="link-block">
+                                    <a href="//trimet.org/contact/lostandfound.htm" onclick="_gaq.push(['_trackEvent', 'Menu', 'Support', 'Lost and Found']);" class="lostandfound">
+                                      <div class="overlay">
+                                        <h3>Lost &amp; Found</h3>
+                                        <div class="media-message">Lose something on TriMet? We can help re-unite you with your stuff.</div>
+                                      </div>
+                                    </a>
+                                  </div>
+
+
+                                </div>
+                              </div>
+
+                              <div class="slice-item slice-item-single">
+
+                                <ul class="l-drawer-media-wrapper">
+                                  <li>
+                                    <a href="tel:+15032387433" class="media" onclick="_gaq.push(['_trackEvent', 'Menu', 'Support', '503-238-RIDE']);">
+                                      <div class="media-wrapper">
+                                        <div class="media-content">
+                                          <div class="media-title">503-238-RIDE (7433)</div>
+                                          <div class="media-message"><b>Customer service and trip planning:</b> 7:30&nbsp;a.m.&ndash;5:30&nbsp;p.m. daily</div>
+                                          <div class="media-message"><b>Arrival information:</b> 24 hours a day</div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                  <li style="padding-top:9px;">
+                                    <a href="//trimet.org/contact/tto.htm" class="media" onclick="_gaq.push(['_trackEvent', 'Menu', 'Support', 'TriMet Ticket Office']);">
+                                      <div class="media-wrapper">
+                                        <div class="media-content">
+                                          <div class="media-title">TriMet Ticket Office</div>
+                                          <div class="media-message">Pioneer Courthouse Square</div>
+                                          <div class="media-message">701 SW 6th Ave., Portland, OR 97204</div>
+                                          <div class="media-message">8:30 a.m.&ndash;5:30 p.m. weekdays</div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </li>
+                                </ul>
+
+                                <div class="link-block-small" style="padding-top:5px;">
+                                  <a href="https://twitter.com/trimethelp" class="media" onclick="_gaq.push(['_trackEvent', 'Menu', 'Support', 'Twitter']);" class="media">
+                                    <div class="media-wrapper">
+                                      <div class="media-preview"><img height="50" src="//trimet.org/global/img/drawer/trimethelp.png" alt="" class="media-img"></div>
+                                      <div class="media-content">
+                                        <div class="media-title">Twitter</div>
+                                        <div class="media-message">@trimethelp</div>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                      </div>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="menu-item menu-item-expandable drawer drawer-alt" role="treeitem">
+                <a href="javascript:;" class="menu-item-header drawer-header" title="More" onclick="_gaq.push(['_trackEvent', 'Menu', 'More', 'Main']);">
+                  <h3 class="menu-item-main">More</h3>
+
+                  <div class="drawer-marker"><i class="drawer-marker-a"></i><i class="drawer-marker-b"></i></div>
+                </a>
+                <div class="menu-item-content drawer-content js-measure" role="group" aria-hidden="true">
+                  <ul class="wrapper">
+                     <div class="wrapper">
+                            <div class="l-drawer-more l-drawer-group slice">
+
+                              <div class="slice-item slice-item-single" style="padding-top:0">
+                                <div class="l-drawer-group slice" style="margin-top:0">
+
+                                  <div class="link-block">
+                                    <a href="//trimet.org/club/index.htm" onclick="_gaq.push(['_trackEvent', 'Menu', 'More', 'Riders Club']);" class="ridersclub">
+                                      <div class="overlay">
+                                        <h3>Riders Club</h3>
+                                        <div class="media-message">Hop card giveaways, surveys, contests, events and more.</div>
+                                      </div>
+                                    </a>
+                                  </div>
+
+                                  <div class="link-block">
+                                    <a href="http://howweroll.trimet.org/" onclick="_gaq.push(['_trackEvent', 'Menu', 'More', 'How We Roll']);" class="howweroll">
+                                      <div class="overlay">
+                                        <h3>How We Roll</h3>
+                                        <div class="media-message">Transit news, behind-the-scenes features and fun stuff for riders.</div>
+                                      </div>
+                                    </a>
+                                  </div>
+
+                                  <div class="link-block">
+                                    <a href="//trimet.org/gear/index.htm" onclick="_gaq.push(['_trackEvent', 'Menu', 'More', 'Gear Store']);" class="gearstore">
+                                      <div class="overlay">
+                                        <h3>Gear Store</h3>
+                                        <div class="media-message">TriMet t-shirts, throwback t-shirts, posters, maps and more.</div>
+                                      </div>
+                                    </a>
+                                  </div>
+
+                                </div>
+                              </div>
+
+                              <div class="slice-item slice-item-single">
+                                <h4 class="hide">Links</h4>
+                                <ul class="drawer-list drawer-list-wide">
+                                  <li class="drawer-item"><a class="l-drawer-link" href="https://myhopcard.com" onclick="_gaq.push(['_trackEvent', 'Menu', 'More', 'Hop Fastpass']);"><i class="icon icon-8 icon-right-arrow"></i>Hop Fastpass<sup>&trade;</a></li>
+                                  <li class="drawer-item"><a class="l-drawer-link" href="//trimet.org/apps/index.htm" onclick="_gaq.push(['_trackEvent', 'Menu', 'More', 'App Center']);"><i class="icon icon-8 icon-right-arrow"></i>App Center</a></li>
+                                  <li class="drawer-item"><a class="l-drawer-link" href="//trimet.org/about/index.htm" onclick="_gaq.push(['_trackEvent', 'Menu', 'More', 'About Us']);"><i class="icon icon-8 icon-right-arrow"></i>About us</a></li>
+                                </ul>
+
+                                <div class="link-block-small toppadding">
+                                  <a href="//trimet.org/emailupdates/index.htm" class="media" onclick="_gaq.push(['_trackEvent', 'Menu', 'More', 'Email Updates']);" class="media">
+                                    <div class="media-wrapper">
+                                      <div class="media-preview"><img height="50" src="//trimet.org/global/img/drawer/email.png" alt="" class="media-img"></div>
+                                      <div class="media-content">
+                                        <div class="media-title">Email Updates</div>
+                                        <div class="media-message">Get service updates by email or SMS</div>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          </ul>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -550,14 +469,13 @@
 </nav>
 <!-- end nav -->
 
-
 <!-- content begin -->
 <section id="content" class="content">
     <a name="content"></a>
     <div id="main" style="min-height: 600px"></div>
 </section>
 <!-- content end -->
-    
+
 
 
 <section id="footer" class="content footer">
