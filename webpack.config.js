@@ -55,7 +55,6 @@ module.exports = {
         alias: {
             // todo get rid of this... include path directly in code...
             app_css: path.join(__dirname, "/apps/map.css"),
-            style_css: path.join(__dirname, "/apps/style.css"),
 
             pelias_css: path.join(__dirname, "/node_modules/leaflet-geocoder-mapzen/dist/leaflet-geocoder-mapzen.css"),
 

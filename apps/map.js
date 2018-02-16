@@ -8,7 +8,6 @@ import 'leaflet_locate_css';
 import 'leaflet.locatecontrol/dist/L.Control.Locate.css';
 
 //import 'font-awesome/css/font-awesome.css';
-import 'style_css';
 import 'font-awesome/less/font-awesome.less';
 
 
@@ -75,7 +74,7 @@ export default class MapController {
 
         this.map.addControl(new L.Control.Fullscreen());
         L.control.scale({maxWidth:240, metric:false, imperial:true, position: 'bottomleft'}).addTo(this.map);
-        L.control.polylineMeasure({unit:'landmiles', clearMeasurementsOnStop:true, showMeasurementsClearControl:true, showUnitControl: true}).addTo(this.map);
+        L.control.polylineMeasure({unit:'landmiles', measureControlLabel: '&#x1f4cf;', backgroundColor: '#f3dd2d', clearMeasurementsOnStop:true}).addTo(this.map);
     }
 
     getMap() {
