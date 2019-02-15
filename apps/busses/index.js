@@ -6,5 +6,20 @@ import config from "json-loader!yaml-loader!../config.yml";
 
 var mc = new MapController(config);
 
-var geojsonLayer = new L.GeoJSON.AJAX("http://localhost:54145/vehicles_via_route?id=12");
+
+var geojsonLayer = new L.GeoJSON.AJAX("http://localhost:54145/vehicles_via_route?id=12", {
+    pointToLayer: function(geoJsonPoint, latlng) {
+        console.log("marker at " + latlng);
+        var lat = geoJsonPoint.properties.lat
+        var lon = geoJsonPoint.properties.lon
+        var ll = L.latLng(lat, lon)
+        return L.marker(ll);
+    },
+    xstyle: function (feature) {
+        return {color: '#FF0000'};
+    }}).bindPopup(function (layer) {
+        console.log("popup");
+        return layer.feature.properties.destination;
+    });
+
 geojsonLayer.addTo(mc.getMap());
