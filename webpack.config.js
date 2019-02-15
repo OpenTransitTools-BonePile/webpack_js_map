@@ -13,6 +13,7 @@ module.exports = {
 
     entry: {
         'apps/simple/index': './apps/simple/',
+        'apps/busses/index': './apps/busses/',
         'apps/timeline/index': './apps/timeline/'
     },
     output: {
@@ -29,6 +30,13 @@ module.exports = {
             template: 'apps/index.tpl.html',
             inject: 'body',
             filename: 'apps/simple/index.html'
+        }),
+        new HtmlWebpackPlugin({
+            title: 'Busses',
+            chunks: ['apps/busses/index'],
+            template: 'apps/index.tpl.html',
+            inject: 'body',
+            filename: 'apps/busses/index.html'
         }),
         new HtmlWebpackPlugin({
             title: 'TimeLine',
