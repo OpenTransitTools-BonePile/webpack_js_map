@@ -9,19 +9,24 @@ var mc = new MapController(config);
 
 
 var geojsonLayer = new L.GeoJSON.AJAX("http://localhost:54145/vehicles_via_route?id=12", {
-    pointToLayer: function(geoJsonPoint, latlng) {
+    pointToLayer: function(pt, latlng) {
         console.log("marker at " + latlng);
-        var lat = geoJsonPoint.properties.lat
-        var lon = geoJsonPoint.properties.lon
-        var ll = L.latLng(lat, lon)
+        var lat = pt.properties.lat;
+        var lon = pt.properties.lon;
+        var ll = L.latLng(lat, lon);
+        var ic = L.icon({
+            iconUrl: 'https://maps.trimet.org/images/map/misc/vehicle-arrow.png',
+            iconSize: [15, 15],
+            iconAnchor: [7, 7],
+            popupAnchor: [0, -6]
+        });
         return L.marker(ll, {
-                rotationAngle: 45
+                icon: ic,
+                rotationAngle: pt.properties.heading
             }
         );
-    },
-    xstyle: function (feature) {
-        return {color: '#FF0000'};
-    }}).bindPopup(function (layer) {
+    }
+    }).bindPopup(function (layer) {
         console.log("popup");
         return layer.feature.properties.destination;
     });
