@@ -4440,6 +4440,11 @@ leaflet-omnivore@^0.3.4:
     topojson "1.6.26"
     wellknown "0.4.2"
 
+leaflet-rotatedmarker@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/leaflet-rotatedmarker/-/leaflet-rotatedmarker-0.2.0.tgz#4467f49f98d1bfd56959bd9c6705203dd2601277"
+  integrity sha1-RGf0n5jRv9VpWb2cZwUgPdJgEnc=
+
 leaflet-timedimension@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/leaflet-timedimension/-/leaflet-timedimension-1.1.0.tgz#9eecbdf9266a2ef14ace8282db1d1bfd5b151006"

@@ -25,6 +25,7 @@
         "leaflet-omnivore": "^0.3.4",
         "leaflet-timedimension": "^1.1.0",
         "leaflet-ajax": "^2.1.0",
+        "leaflet-rotatedmarker": "^0.2.0",
 
         "iso8601-js-period": "0.2.0",
         "font-awesome": "^4.7.0",
