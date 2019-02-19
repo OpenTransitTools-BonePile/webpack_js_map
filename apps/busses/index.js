@@ -22,7 +22,11 @@ const orangeIcon = L.icon({
 });
 
 
-var geojsonLayer = new L.GeoJSON.AJAX("http://localhost:54145/vehicles_via_route?id=12", {
+var url = "http://localhost:54145/vehicles_via_route?id=12";
+url = "./test/data/vehicles_via_route?id=12";
+url = "./test/data/all_vehicles";
+
+var geojsonLayer = new L.GeoJSON.AJAX(url, {
     pointToLayer: function(pt, latlng) {
         var lat = pt.properties.lat;
         var lon = pt.properties.lon;
