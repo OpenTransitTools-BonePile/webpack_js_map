@@ -23,7 +23,8 @@ const orangeIcon = L.icon({
 
 
 var url = "http://localhost:54145/vehicles_via_route?id=12";
-url = "./test/data/vehicles_via_route?id=12";
+url = "./test/data/vehicles_via_route_12";
+url = "./test/data/vehicles_via_route_12_OLD";
 url = "./test/data/all_vehicles";
 
 var geojsonLayer = new L.GeoJSON.AJAX(url, {
